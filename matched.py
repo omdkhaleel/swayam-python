@@ -14,3 +14,15 @@ def matched(s):
     return (True)
   else:
     return (False)
+
+  # One more way
+  def matched(s):
+  nesting = 0
+  for c in s:
+    if c == '(':
+      nesting = nesting + 1
+    elif c == ')':
+      nesting = nesting - 1
+    if nesting < 0:
+      return(False)
+  return(nesting == 0)
