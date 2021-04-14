@@ -1,6 +1,8 @@
 def fndstr():
-  fhand=open('mbox.txt')
+  fname=input('Enter the file name: ')
+  fstr=input('Enter the searching word: ')
+  fhand=open(fname)
   for iine in fhand:
     line=line.rstrip()
-    if line.find('@github.io')==-1: continue
+    if line.find(fstr)==-1: continue
     print(line)  
