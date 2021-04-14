@@ -1,5 +1,6 @@
 def linecount():
-  fhand=open('mbox.txt')
+  fname=input('Enter the file name: ')
+  fhand=open(fname)
   count=0
   for line in fhand:
     count=count+1
